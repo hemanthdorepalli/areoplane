@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+   
+
+
+}
+#id1{
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    top: 500px;
+}
+#id2{
+width: 400px;
+height: 100px;
+position: absolute;
+top: 430px;
+left: 900px;
+animation: flight;
+animation-duration: 4s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+
+
+}
+@keyframes flight {
+    0%{
+         transform: translateX(0px) translateY(0px) rotate(0deg);
+    }
+    30%{
+        transform: translateX(-400px) translateY(0px) rotate(0deg);
+    }
+    100%{
+        transform: translateX(-1500px)  translateY(-300px) rotate(30deg);
+        }
+    }
+
+    
